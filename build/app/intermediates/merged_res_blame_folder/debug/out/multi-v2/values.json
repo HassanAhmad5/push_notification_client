@@ -4,25 +4,6 @@
             "outputFile": "com.hassan.notification_client.app-mergeDebugResources-36:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hp\\StudioProjects\\notification_client\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,832",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "483,998"
-                    },
-                    "to": {
-                        "startLines": "209,213",
-                        "startColumns": "4,4",
-                        "startOffsets": "13058,13239",
-                        "endLines": "212,215",
-                        "endColumns": "12,12",
-                        "endOffsets": "13234,13403"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\790e5358c22551293e10276c514e9d00\\transformed\\browser-1.4.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -93,6 +74,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Hp\\Documents\\GitHub\\Push_Notification_Client\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,832",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "483,998"
+                    },
+                    "to": {
+                        "startLines": "209,213",
+                        "startColumns": "4,4",
+                        "startOffsets": "13058,13239",
+                        "endLines": "212,215",
+                        "endColumns": "12,12",
+                        "endOffsets": "13234,13403"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\331e6def37b6f31d44e288907978ac31\\transformed\\lifecycle-viewmodel-2.7.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -148,23 +148,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hp\\StudioProjects\\notification_client\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,137,241,350,470,585",
-                        "endColumns": "81,103,108,119,114,83",
-                        "endOffsets": "132,236,345,465,580,664"
-                    },
-                    "to": {
-                        "startLines": "202,203,204,205,206,207",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "12373,12455,12559,12668,12788,12903",
-                        "endColumns": "81,103,108,119,114,83",
-                        "endOffsets": "12450,12554,12663,12783,12898,12982"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Hp\\.gradle\\caches\\transforms-3\\a209272a9e69cf8cfa53211dd93621e9\\transformed\\jetified-startup-runtime-1.1.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -215,6 +198,23 @@
                         "startOffsets": "3116,3205,3276,4958,5011,5064,5117,8717,13726,13902,14024,14286,14481",
                         "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
                         "endOffsets": "3200,3271,3344,5006,5059,5112,5165,8772,13787,14019,14080,14347,14543"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Hp\\Documents\\GitHub\\Push_Notification_Client\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,137,241,350,470,585",
+                        "endColumns": "81,103,108,119,114,83",
+                        "endOffsets": "132,236,345,465,580,664"
+                    },
+                    "to": {
+                        "startLines": "202,203,204,205,206,207",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "12373,12455,12559,12668,12788,12903",
+                        "endColumns": "81,103,108,119,114,83",
+                        "endOffsets": "12450,12554,12663,12783,12898,12982"
                     }
                 },
                 {

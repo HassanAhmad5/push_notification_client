@@ -13,11 +13,11 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-16-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:3:5-77
-16-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:3:22-74
+16-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:3:5-77
+16-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:3:22-74
 17    <!--
 18 Required to query activities that can process text, see:
 19         https://developer.android.com/training/package-visibility and
@@ -26,28 +26,28 @@
 22         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 23    -->
 24    <queries>
-24-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:42:5-47:15
+24-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:42:5-47:15
 25        <intent>
-25-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:43:9-46:18
+25-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:43:9-46:18
 26            <action android:name="android.intent.action.PROCESS_TEXT" />
-26-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:44:13-72
-26-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:44:21-70
+26-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:44:13-72
+26-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:44:21-70
 27
 28            <data android:mimeType="text/plain" />
-28-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:45:13-50
-28-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:45:19-48
+28-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:45:13-50
+28-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:45:19-48
 29        </intent>
 30    </queries>
 31
 32    <uses-permission android:name="android.permission.WAKE_LOCK" />
-32-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-32-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
+32-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+32-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
 33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-33-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-33-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+33-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+33-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
 34    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-34-->[:flutter_local_notifications] C:\Users\Hp\StudioProjects\notification_client\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-34-->[:flutter_local_notifications] C:\Users\Hp\StudioProjects\notification_client\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
+34-->[:flutter_local_notifications] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+34-->[:flutter_local_notifications] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 35    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 35-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Hp\.gradle\caches\transforms-3\eb240debf6af6f165a70f61ba817f881\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
 35-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Hp\.gradle\caches\transforms-3\eb240debf6af6f165a70f61ba817f881\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
@@ -109,37 +109,37 @@
 83            android:value="2" />
 84
 85        <service
-85-->[:cloud_firestore] C:\Users\Hp\StudioProjects\notification_client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
+85-->[:cloud_firestore] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
 86            android:name="com.google.firebase.components.ComponentDiscoveryService"
-86-->[:cloud_firestore] C:\Users\Hp\StudioProjects\notification_client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:18-89
+86-->[:cloud_firestore] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:18-89
 87            android:directBootAware="true"
 87-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Hp\.gradle\caches\transforms-3\eca4333cb219929078e4b58375a8cccc\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
 88            android:exported="false" >
 88-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Hp\.gradle\caches\transforms-3\7fce39efd1824ffdaf2815742dec1bfb\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:68:13-37
 89            <meta-data
-89-->[:cloud_firestore] C:\Users\Hp\StudioProjects\notification_client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+89-->[:cloud_firestore] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-90-->[:cloud_firestore] C:\Users\Hp\StudioProjects\notification_client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-134
+90-->[:cloud_firestore] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-134
 91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[:cloud_firestore] C:\Users\Hp\StudioProjects\notification_client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+91-->[:cloud_firestore] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 92            <meta-data
-92-->[:firebase_auth] C:\Users\Hp\StudioProjects\notification_client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+92-->[:firebase_auth] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-93-->[:firebase_auth] C:\Users\Hp\StudioProjects\notification_client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+93-->[:firebase_auth] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 94                android:value="com.google.firebase.components.ComponentRegistrar" />
-94-->[:firebase_auth] C:\Users\Hp\StudioProjects\notification_client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+94-->[:firebase_auth] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 95            <meta-data
-95-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+95-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-96-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+96-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 97                android:value="com.google.firebase.components.ComponentRegistrar" />
-97-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+97-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 98            <meta-data
-98-->[:firebase_core] C:\Users\Hp\StudioProjects\notification_client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+98-->[:firebase_core] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 99                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-99-->[:firebase_core] C:\Users\Hp\StudioProjects\notification_client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+99-->[:firebase_core] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 100                android:value="com.google.firebase.components.ComponentRegistrar" />
-100-->[:firebase_core] C:\Users\Hp\StudioProjects\notification_client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+100-->[:firebase_core] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 101            <meta-data
 101-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Hp\.gradle\caches\transforms-3\7fce39efd1824ffdaf2815742dec1bfb\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
 102                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -202,53 +202,53 @@
 130-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Hp\.gradle\caches\transforms-3\0470547f000a3ac56232e16a8acfdec7\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
 131        </service>
 132        <service
-132-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+132-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 133            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-133-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+133-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 134            android:exported="false"
-134-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+134-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 135            android:permission="android.permission.BIND_JOB_SERVICE" />
-135-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+135-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 136        <service
-136-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+136-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 137            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-137-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+137-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 138            android:exported="false" >
-138-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+138-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 139            <intent-filter>
-139-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+139-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 140                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-140-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-140-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+140-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+140-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 141            </intent-filter>
 142        </service>
 143
 144        <receiver
-144-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+144-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 145            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-145-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+145-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 146            android:exported="true"
-146-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+146-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 147            android:permission="com.google.android.c2dm.permission.SEND" >
-147-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+147-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 148            <intent-filter>
-148-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+148-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 149                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-149-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-149-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+149-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+149-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 150            </intent-filter>
 151        </receiver>
 152
 153        <provider
-153-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+153-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 154            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-154-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+154-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 155            android:authorities="com.hassan.notification_client.flutterfirebasemessaginginitprovider"
-155-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+155-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 156            android:exported="false"
-156-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+156-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 157            android:initOrder="99" />
-157-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+157-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 158
 159        <activity
 159-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Hp\.gradle\caches\transforms-3\7fce39efd1824ffdaf2815742dec1bfb\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
@@ -276,7 +276,7 @@
 169-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Hp\.gradle\caches\transforms-3\7fce39efd1824ffdaf2815742dec1bfb\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
 170
 171                <data
-171-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:45:13-50
+171-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:45:13-50
 172                    android:host="firebase.auth"
 173                    android:path="/"
 174                    android:scheme="genericidp" />
@@ -308,7 +308,7 @@
 187-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Hp\.gradle\caches\transforms-3\7fce39efd1824ffdaf2815742dec1bfb\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
 188
 189                <data
-189-->C:\Users\Hp\StudioProjects\notification_client\android\app\src\main\AndroidManifest.xml:45:13-50
+189-->C:\Users\Hp\Documents\GitHub\Push_Notification_Client\android\app\src\main\AndroidManifest.xml:45:13-50
 190                    android:host="firebase.auth"
 191                    android:path="/"
 192                    android:scheme="recaptcha" />
@@ -324,10 +324,10 @@
 199            android:permission="com.google.android.c2dm.permission.SEND" >
 199-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Hp\.gradle\caches\transforms-3\eb240debf6af6f165a70f61ba817f881\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
 200            <intent-filter>
-200-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+200-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 201                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-201-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-201-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+201-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+201-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 202            </intent-filter>
 203
 204            <meta-data
@@ -350,10 +350,10 @@
 215            android:exported="false" >
 215-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Hp\.gradle\caches\transforms-3\eb240debf6af6f165a70f61ba817f881\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
 216            <intent-filter android:priority="-500" >
-216-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+216-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 217                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-217-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-217-->[:firebase_messaging] C:\Users\Hp\StudioProjects\notification_client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+217-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+217-->[:firebase_messaging] C:\Users\Hp\Documents\GitHub\Push_Notification_Client\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 218            </intent-filter>
 219        </service>
 220        <service

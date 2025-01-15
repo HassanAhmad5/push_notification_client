@@ -4,7 +4,7 @@
             "outputFile": "com.hassan.notification_client.app-mergeDebugResources-36:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hp\\StudioProjects\\notification_client\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\Hp\\Documents\\GitHub\\Push_Notification_Client\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
