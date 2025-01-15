@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -130,4 +132,29 @@ class PushNotificationService {
       // Navigator.push(context, MaterialPageRoute(builder: (context) => ChatScreen(chatId: message.data['chatId'])));
     }
   }
+
+  void isTokenRefresh(){
+    _messaging.onTokenRefresh.listen((event) async {
+      final FirebaseAuth auth = FirebaseAuth.instance;
+      await updateFcmTokenOnLogin(auth.currentUser!.uid, event);
+    });
+  }
+
+
+  Future<void> updateFcmTokenOnLogin(String uid, String newFcmToken) async {
+    try {
+      // Reference to the user's document
+      DocumentReference userDoc = FirebaseFirestore.instance.collection('users').doc(uid);
+
+      // Update the fcmToken field
+      await userDoc.update({
+        'fcmToken': newFcmToken,
+      });
+
+      print('FCM Token updated successfully for user: $uid');
+    } catch (e) {
+      print('Error updating FCM Token for user $uid: $e');
+    }
+  }
+
 }

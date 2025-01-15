@@ -1,0 +1,1 @@
+ C:\\Users\\Hp\\Documents\\GitHub\\Push_Notification_Client\\.dart_tool\\flutter_build\\3f6913a3869b5770514ced2512eb9f0c\\native_assets.yaml: 

@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:notification_client/push_notification_services.dart';
 import 'package:notification_client/signup_screen.dart';
 import 'deposit_screen.dart'; // Import the DepositScreen here
 
@@ -13,6 +14,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
+  final PushNotificationService _notificationService = PushNotificationService();
+
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -48,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       String? fcmToken = await FirebaseMessaging.instance.getToken();
 
-      await updateFcmTokenOnLogin(_auth.currentUser!.uid, fcmToken!).then((_) {
+      await _notificationService.updateFcmTokenOnLogin(_auth.currentUser!.uid, fcmToken!).then((_) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const DepositScreen()),
@@ -70,21 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
 
-  Future<void> updateFcmTokenOnLogin(String uid, String newFcmToken) async {
-    try {
-      // Reference to the user's document
-      DocumentReference userDoc = FirebaseFirestore.instance.collection('users').doc(uid);
 
-      // Update the fcmToken field
-      await userDoc.update({
-        'fcmToken': newFcmToken,
-      });
-
-      print('FCM Token updated successfully for user: $uid');
-    } catch (e) {
-      print('Error updating FCM Token for user $uid: $e');
-    }
-  }
 
 
   @override

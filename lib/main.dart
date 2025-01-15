@@ -41,6 +41,7 @@ class _MyAppState extends State<MyApp> {
     super.initState();
 
     _notificationService.initialize(context);
+    _notificationService.isTokenRefresh();
   }
 
   @override
