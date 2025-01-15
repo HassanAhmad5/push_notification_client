@@ -41,6 +41,8 @@ dependencies:
   firebase_messaging:
 #  app_settings:
   flutter_local_notifications: ^18.0.1
+  googleapis_auth: ^1.6.0
+  http:
 
 dev_dependencies:
   flutter_test:

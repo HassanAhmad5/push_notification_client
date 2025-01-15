@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -45,11 +46,18 @@ class _LoginScreenState extends State<LoginScreen> {
       // Sign in with Firebase Authentication
       await _auth.signInWithEmailAndPassword(email: email, password: password);
 
+      String? fcmToken = await FirebaseMessaging.instance.getToken();
+
+      await updateFcmTokenOnLogin(_auth.currentUser!.uid, fcmToken!).then((_) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const DepositScreen()),
+        );
+      });
+
+
       // Navigate to DepositScreen after successful login
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const DepositScreen()),
-      );
+
     } catch (e) {
       setState(() {
         _isLoading = false;
@@ -60,6 +68,24 @@ class _LoginScreenState extends State<LoginScreen> {
       );
     }
   }
+
+
+  Future<void> updateFcmTokenOnLogin(String uid, String newFcmToken) async {
+    try {
+      // Reference to the user's document
+      DocumentReference userDoc = FirebaseFirestore.instance.collection('users').doc(uid);
+
+      // Update the fcmToken field
+      await userDoc.update({
+        'fcmToken': newFcmToken,
+      });
+
+      print('FCM Token updated successfully for user: $uid');
+    } catch (e) {
+      print('Error updating FCM Token for user $uid: $e');
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {

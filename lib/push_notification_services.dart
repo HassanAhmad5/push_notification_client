@@ -18,11 +18,11 @@ class PushNotificationService {
 
     // Handle foreground notifications
     FirebaseMessaging.onMessage.listen((message) {
-      if (message.notification != null) {
-        // Check for duplicates and handle foreground notifications
-        _handleForegroundNotification(context, message);
+      if (message.data.isNotEmpty) {
+        PushNotificationService.displayNotification(message);
       }
     });
+
 
     // Handle notification interactions in the background
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
@@ -75,24 +75,16 @@ class PushNotificationService {
     );
   }
 
-  void _handleForegroundNotification(
-      BuildContext context, RemoteMessage message) {
-    if (message.notification != null) {
-      _showNotification(message);
-    }
-  }
 
   static Future<void> displayNotification(RemoteMessage message) async {
-    // Prevent duplicate notifications
-    if (message.notification?.title == null && message.notification?.body == null) {
-      return;
-    }
+    final String title = message.data['title'] ?? 'No Title';
+    final String body = message.data['body'] ?? 'No Body';
 
     const AndroidNotificationChannel channel = AndroidNotificationChannel(
-      'high_importance_channel', // Unique ID
-      'High Importance Notifications', // Channel name
+      'high_importance_channel',
+      'High Importance Notifications',
       description: 'This channel is used for important notifications.',
-      importance: Importance.high,
+      importance: Importance.max,
       playSound: true,
     );
 
@@ -105,8 +97,8 @@ class PushNotificationService {
       channel.id,
       channel.name,
       channelDescription: channel.description,
-      importance: Importance.high,
-      priority: Priority.high,
+      importance: Importance.max,
+      priority: Priority.max,
       playSound: true,
     );
 
@@ -123,15 +115,12 @@ class PushNotificationService {
 
     await _flutterLocalNotificationsPlugin.show(
       message.hashCode,
-      message.notification?.title ?? 'No Title',
-      message.notification?.body ?? 'No Body',
+      title,
+      body,
       notificationDetails,
     );
   }
 
-  Future<void> _showNotification(RemoteMessage message) async {
-    displayNotification(message);
-  }
 
   void _handleNotificationInteraction(
       BuildContext context, RemoteMessage message) {

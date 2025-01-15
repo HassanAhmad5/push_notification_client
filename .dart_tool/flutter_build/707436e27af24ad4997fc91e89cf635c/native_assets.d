@@ -1,0 +1,1 @@
+ C:\\Users\\Hp\\StudioProjects\\notification_client\\.dart_tool\\flutter_build\\707436e27af24ad4997fc91e89cf635c\\native_assets.yaml: 

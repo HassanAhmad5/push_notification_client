@@ -5,26 +5,22 @@ import 'package:notification_client/login_screen.dart';
 import 'package:notification_client/push_notification_services.dart';
 import 'firebase_options.dart';
 
-// Background message handler (must be a top-level function)
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   // Ensure Firebase is initialized
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  // Log the background message
-  print('Handling a background message: ${message.messageId}');
-
-  // Display notification when in background/terminated
-  PushNotificationService.displayNotification(message);
+  if (message.data.isNotEmpty) {
+    PushNotificationService.displayNotification(message);
+  }
 }
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Initialize Firebase
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-
-  // Register background message handler
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(const MyApp());
@@ -44,7 +40,6 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
 
-    // Initialize notification services
     _notificationService.initialize(context);
   }
 
